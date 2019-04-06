@@ -29,17 +29,34 @@ div#screenmaybe { width:6em; height:6em;
 #m-right-safe { clear:both; height:1em; }
 
 
+/* footer */
+
+hr { border-top: 1px solid #d6d7d7; width:80%; }
+
+div#low-left { width:50%; float:left; text-align:left; padding:0 1em; }
+
+div#low-right { width:50%; float:left; text-align:right; padding:0 1em; }
+
+div#soc1 { width:50%; float:left; border-right: 1px solid #86817e; height:3em; padding-right:0.6em; }
+div#soc2 { width:50%; float:left; padding: 0 0.9em 0 0; }
+
+div#low-safe { clear:both; height:1em; }
+
+
 
 
 h1, h2, h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-             padding:0;margin:0;
+             padding:0; margin:0;
              color:#f3f3f3; }
 
     p { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-        padding:0;margin:0;
+        padding:0; margin:0;
         color:#bdae9d; }
 
-span { padding:0;margin:0;
-       color: #0088ce; }
+span { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+       padding:0; margin:0; color:#0088ce; }
 
+div#lowerindent span { padding:0; margin:0; color:#86817e; font-size:0.8em; }
+/* div#lowerindent span { padding:0; margin:0; color:#208008; font-size:0.8em; } */
 
+    a { text-decoration:underline; margin: 0 3px; font-family: "Courier New", Courier, monospace; }
