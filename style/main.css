@@ -1,0 +1,25 @@
+body { background:#d6d7d7; margin:0; }
+
+div#main {   background:#323639;
+                width:666px;
+                margin: 0px auto;
+                box-shadow: 0 5px 15px 5px gray; }
+
+div#upperindent { height:4em; }
+
+div#indent { padding:1em;
+             height:inherit; }
+
+
+
+
+h1, h2, h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+             padding:0;margin:0;
+             color:#f3f3f3; }
+
+    p { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        padding:0;margin:0;
+        color:#bdae9d; }
+
+span { padding:0;margin:0;
+       color: #0088ce; }
