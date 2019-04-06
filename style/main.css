@@ -11,6 +11,24 @@ div#indent { padding:1em;
              height:inherit; }
 
 
+/* button */
+
+div#module1 { text-align:center;  }
+
+div#m-left { width:50%; float:left; padding: 0 2em;}
+
+div#m-right { width:50%; float:left; }
+
+div#m-right-top {  }
+
+div#m-right-bot {  }
+
+div#screenmaybe { width:6em; height:6em;
+                  margin:auto; background:#d6d7d7; }
+
+#m-right-safe { clear:both; height:1em; }
+
+
 
 
 h1, h2, h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -23,3 +41,5 @@ h1, h2, h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 span { padding:0;margin:0;
        color: #0088ce; }
+
+
