@@ -1,0 +1,87 @@
+
+# create repo
+- created a repository usrJones/gitWorkflow
+# start a project with a skeleton
+- cloned repo usrJones/vueStartup (skeleton) as a new project
+	* git clone git@github.com:usrJones/vueStartup.git gitWorkflow
+- modified the readme-file
+- worked on css and index, gave it some appearance
+# push as a new project
+- removed the .git-folder
+	* rm -r .git/
+- git init
+- git add .
+- git commit -m 'initial commit'
+- git remote add origin git@github.com "col" usrJones/gitWorkflow.git
+- git push origin master
+# make a dev branch, push project there and make it default
+- git branch develop
+- git checkout develop
+- git push -u origin develop
+	* at this point github says that develop is even with master with the latest commmit
+-->  At this time a new project is born and everything is stable. :
+-->  Let the development begin. :
+# start doing a feature
+- git branch feature/button
+- git checkout feature/button
+-->  At this point it's possible to push to remote to let everyone know that you're working on a feature :
+-->  But I guess there's really nothing to push except just the branch, so I won't bother :
+- added a button and a screen, added two empty js docs, no functionality yet
+# start doing a hotfix
+- commit/push the incomplete feature to "save" it until we come back to it
+	* git add .
+	* git commit -m 'added a button and ...'
+	* git push origin feature/button
+- git checkout develop
+- git checkout -b hotfix/footer
+-->  Same as above, there's really nothing to push at this point, so let's just code locally :
+- added a footer
+# finish up with the hotfix
+- git add .
+- git commit -m 'added a footer'
+- git push origin hotfix/footer
+- git checkout develop
+- git merge hotfix/footer
+- git branch -d hotfix/footer
+- (forgot to delete from github) -> (git push origin --delete hotfix/footer)
+-->  At this point the code just added to footer is in develop :
+- git push origin develop
+# continue with the feature
+- git checkout feature/button
+-->  I read that this is totally optional, but it's possible to merge in this new fix :
+-->  I want the footer to be in my feature/button so I can see how well they play together :
+- git pull origin develop
+-->  And we have our first conflict, but it was easy to sort out :
+- resolved a conflict in main.css
+- git add .
+- git commit -m 'resolved a conflict between dev&hotfix in main.css, font family in span'
+-->  Now master doesn't have anything :
+-->  .. develop has footer :
+-->  .. feature/button has footer and the feature :
+-->  .. I've made 2 commits in develop - init, & footer :
+-->  .. I've made 4 commits in feature - init, empty button, footer & conflict :
+-->  and github has 4 branches - master, hotfix/footer, develop & feature/button :
+- delete extra branch from github
+	* git push origin --delete hotfix/footer
+- added functionality to the button
+# finish up with the feature
+- git add .
+- git commit -m 'added functionality to the button'
+- git push origin feature/button
+- git checkout develop
+- git merge feature/button
+- git branch -d feature/button
+- git push origin --delete feature/button
+- git push origin develop
+# finish up with the development
+- added some content to index
+- modified the readme-file
+- added this doc to project files
+- git add .
+- git commit -m 'finished with everything'
+- git push origin develop
+# update the master, product is ready
+- git checkout master
+- git merge develop
+- git push origin master
+
