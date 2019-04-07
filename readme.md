@@ -2,7 +2,7 @@
 
 ## Git workflow for planning and testing
 
-This project is for:
+This project is for
   Designing a git workflow for personal use
   Testing it for implementing in future projects
   Used as a personal cheatsheet
@@ -10,9 +10,9 @@ This project is for:
 
 The following acts as a baseline:
 > Code close to master, keep commits small.
->   easy-to-read commit history
->   encourages pull requests and easy code reviews
->   fewer merge conflicts
+  > easy-to-read commit history
+  > encourages pull requests and easy code reviews
+  > fewer merge conflicts
 
 -----
 
