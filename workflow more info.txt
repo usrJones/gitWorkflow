@@ -85,3 +85,19 @@
 - git merge develop
 - git push origin master
 
+# new machine, what do
+- make a SSH key
+	* cd ~/.ssh
+	* ssh-keygen (go with the defaults)
+	* cat [key name]
+- copy the key, log into github and add it to your SSH keys
+- set up some account info
+	* git config --global user.name "hidemyrealname"
+	* git config --global user.email "robert (at) clownpenis.fart"
+- go to your dev folder's root and clone the repo
+	* git clone git@github.com:usrJones/gitWorkflow.git
+- make some changes
+- git add .
+- git commit -m 'new machine lol'
+- git push
+- git checkout master
